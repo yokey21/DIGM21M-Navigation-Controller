@@ -21,7 +21,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
-                                    <segue destination="UBL-a3-Ka1" kind="show" id="PvL-PD-3Mb"/>
+                                    <segue destination="UBL-a3-Ka1" kind="presentation" modalPresentationStyle="fullScreen" id="PvL-PD-3Mb"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -42,15 +42,15 @@
             <objects>
                 <viewController id="UBL-a3-Ka1" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="p1V-gS-ANk">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W0z-oX-ZJe">
-                                <rect key="frame" x="164" y="397" width="86" height="48"/>
+                                <rect key="frame" x="164" y="424" width="86" height="48"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
-                                    <segue destination="LzC-I3-56C" kind="show" id="CBg-cV-DNt"/>
+                                    <segue destination="LzC-I3-56C" kind="presentation" modalPresentationStyle="fullScreen" id="CBg-cV-DNt"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -72,17 +72,21 @@
             <objects>
                 <viewController id="LzC-I3-56C" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="EsB-6K-F4p">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YXU-BU-qvp">
-                                <rect key="frame" x="156" y="397" width="102" height="48"/>
+                                <rect key="frame" x="156" y="424" width="102" height="48"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="Dismiss"/>
                                 <connections>
                                     <segue destination="BVe-8v-iJc" kind="unwind" unwindAction="unWindToRedWithUnwindSegue:" id="S4o-he-Cow"/>
                                 </connections>
                             </button>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bay-MC-GPG">
+                                <rect key="frame" x="0.0" y="58" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            </navigationBar>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Flb-9m-APR"/>
                         <color key="backgroundColor" systemColor="systemGreenColor"/>
@@ -96,7 +100,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xzL-N6-Njj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="BVe-8v-iJc" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1333" y="96"/>
+            <point key="canvasLocation" x="1331.8840579710145" y="95.758928571428569"/>
         </scene>
     </scenes>
     <resources>
