@@ -49,6 +49,9 @@
                                 <rect key="frame" x="164" y="397" width="86" height="48"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="LzC-I3-56C" kind="show" id="CBg-cV-DNt"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="uuM-38-6M3"/>
@@ -64,8 +67,42 @@
             </objects>
             <point key="canvasLocation" x="648" y="96"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="R04-ZW-GRJ">
+            <objects>
+                <viewController id="LzC-I3-56C" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="EsB-6K-F4p">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YXU-BU-qvp">
+                                <rect key="frame" x="156" y="397" width="102" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Dismiss"/>
+                                <connections>
+                                    <segue destination="BVe-8v-iJc" kind="unwind" unwindAction="unWindToRedWithUnwindSegue:" id="S4o-he-Cow"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Flb-9m-APR"/>
+                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                        <constraints>
+                            <constraint firstItem="YXU-BU-qvp" firstAttribute="centerX" secondItem="EsB-6K-F4p" secondAttribute="centerX" id="2Ia-rb-pzZ"/>
+                            <constraint firstItem="YXU-BU-qvp" firstAttribute="centerY" secondItem="EsB-6K-F4p" secondAttribute="centerY" id="c7J-fb-WkP"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="LQg-Lc-wje"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xzL-N6-Njj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="BVe-8v-iJc" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1333" y="96"/>
+        </scene>
     </scenes>
     <resources>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemPinkColor">
             <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
